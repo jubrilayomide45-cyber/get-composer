@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
+<body>
+    <style>
 .A{
     /* display: flex; */
     margin: 10px;
-    text-align: center;
+    /* text-align: center; */
    padding: 0;
     font-size: x-large;
     font-family: sans-serif;    
@@ -31,9 +32,25 @@
 
 .B{
     color: #4647F6;
+    text-align: justify center;
 }
+
+.x{
+    border: 1px solid;
+    width: 90%;
+    margin: auto;
+}
+
+.intro{
+    color: #CCCCCC;
+}
+.COM{
+    font-family: sans-serif;
+    font-size: large;
+}
+
 </style>
-<body>
+<div class="x">
     <nav class="A">
         <img src="https://getcomposer.org/img/logo-composer-transparent.png" alt="" style="padding: 30px; margin: 20px;" width="40px" >
        <span class="b">Home</span>
@@ -46,7 +63,7 @@
     <div class="B">
         <p>1. Dependency management</p>
         <p>2. System Requirements</p>
-        <p>3. Installation - Linux / Unix / macOS
+        <p>3. Installation - Linux / Unix  macOS
             <ol>
                 <li>Downloading the Composer Executable</li>
                 <li>Locally</li>
@@ -61,7 +78,42 @@
 
          <p>5. Docker Image</p>
          <p>6. Using Composer</p>
+    </div>
 
+    <h1>Introduction <span class="intro">#</span></h1>
+    <p class="COM">Composer is a tool for dependency management in PHP. It allows you to declare the libraries <br>
+        your project depends on and it will manage (install/update) them for you.</p>
+
+    <h2>Dependency management <span class="intro">#</span></h2>
+    <p class="COM">
+        Composer is <b>not</b> a package manager in the same sense as Yum or Apt are. Yes, it deals with <br>
+        "packages" or libraries, but it manages them on a per-project basis, installing them in a <br>
+        directory (e.g. <button>vendor</button>)inside your project. By default, it does not install anything globally. 
+        Thus, it is a dependency manager. It does however support a "global" project for convenience via the <span class="B">global</span> command.
+    </p>
+    
+    <div>
+        <p class="COM">This idea is not new and Composer is strongly inspired by node's <span class="B">npm</span> and ruby's <span class="B"> bundler</span>.</p>
+
+        <span class="COM">suppose:
+            <ol>
+                <li>You have a project that depends on a number of libraries.</li>
+                <li>Some of those libraries depend on other libraries.</li>
+            </ol>
+        </span>
+
+        <span class="COM">Composer:
+        <ol>
+            <li>Enables you to declare the libraries you depend on.</li>
+            <li>Finds out which versions of which packages can and need to be installed, and installs <br>
+                 them (meaning it downloads them into your project).</li>
+            <li>You can update all your dependencies in one command.</li>
+        </ol>
+        </span>
+        <p></p>
+    </div>
+    
+    
     </div>
 </body>
 </html>
